@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO Test</title>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+<h1>Page header</h1>
+<ng-todo-list title="My list"></ng-todo-list>
+<script>
+    const myList = document.querySelector('ng-todo-list');
+    myList.todos = [
+        {text: "Make a to-do list", checked: false},
+        {text: "Finish blog post", checked: false},
+        {text: "Add checked item", checked: true}
+    ];
+</script>
+</body>
+</html>
